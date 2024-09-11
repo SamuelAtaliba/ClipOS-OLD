@@ -24,7 +24,7 @@ document.getElementById('reportForm').addEventListener('submit', function (e) {
       <p><strong>Horário de Chegada:</strong> ${chegada}</p>
       <p><strong>Horário de Saída:</strong> ${saida}</p>
       <p><strong>Tempo de Permanência:</strong> ${permanencia} minutos</p>
-      <p><strong>Supervisor(a):</strong> ${supervisora}</p>
+      <p><strong>Supervisor:</strong> ${supervisora(a)}</p>
       <p><strong>O que foi feito:</strong> ${feito}</p>
       <p><strong>Pendências:</strong> ${pendente}</p>
   `;
