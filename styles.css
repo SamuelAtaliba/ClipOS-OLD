@@ -1,0 +1,25 @@
+body {
+  background: linear-gradient(to right, #000000, #2600ff); /* Gradiente ajustado */
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 600px;
+}
+
+.form-control, .btn {
+  border-radius: 8px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+#report {
+  background: #222;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}

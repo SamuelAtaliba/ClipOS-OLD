@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClipOS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Relatório de Ordens de Serviço</h1>
+        <form id="reportForm">
+            <div class="form-group">
+                <label for="unidade">Unidade</label>
+                <select id="unidade" class="form-control">
+                    <option>Barra da Tijuca</option>
+                    <option>Botafogo</option>
+                    <option>Del Castilho</option>
+                    <option>Méier</option>
+                    <option>Penha</option>
+                    <option>Recreio</option>
+                    <option>Tijuca</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tecnico">Nome do Técnico</label>
+                <input type="text" id="tecnico" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="data">Data</label>
+                <input type="date" id="data" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="custos">Custos</label>
+                <input type="text" id="custos" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="chegada">Horário de Chegada</label>
+                <input type="time" id="chegada" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="saida">Horário de Saída</label>
+                <input type="time" id="saida" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="supervisora">Nome Supervisor(a)</label>
+                <select id="supervisora" class="form-control">
+                    <option>Ana Caroline Santos Amaral Vilhena</option>
+                    <option>Deiverson Gaia Aguiar</option>
+                    <option>Gabriel da Silva Ferreira</option>
+                    <option>Ludiane Barros Marques Gomes de Carvalho</option>
+                    <option>Rayane Brasil da Silva</option>
+                    <option>Taisa Martins da Rocha</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="feito">O que foi feito</label>
+                <textarea id="feito" class="form-control" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="pendente">Pendências</label>
+                <textarea id="pendente" class="form-control" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Gerar Relatório</button>
+        </form>
+        <hr>
+        <div id="report" class="mt-5"></div>
+        <button id="copyButton" class="btn btn-secondary btn-block">Copiar Relatório</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
